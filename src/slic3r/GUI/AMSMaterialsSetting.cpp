@@ -778,9 +778,9 @@ void AMSMaterialsSetting::Popup(wxString filament, wxString sn, wxString temp_mi
             /*The situation where the user preset is not displayed is as follows:
                 1. Not a root preset
                 2. Not system preset and the printer firmware does not support user preset */
-            if (preset_bundle->filaments.get_preset_base(*filament_it) != &preset || (!filament_it->is_system && !obj->is_support_user_preset)) {
-                continue;
-            }
+            //if (preset_bundle->filaments.get_preset_base(*filament_it) != &preset || (!filament_it->is_system && !obj->is_support_user_preset)) {
+            //    continue;
+            //}
 
             for (auto printer_it = preset_bundle->printers.begin(); printer_it != preset_bundle->printers.end(); printer_it++) {
                 // filter by system preset
